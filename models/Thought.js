@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const reactionSchema = require('./Reaction');
 
 // Define the Thought schema
 const thoughtSchema = new Schema(
@@ -25,9 +26,9 @@ const thoughtSchema = new Schema(
 );
 
 // Create a virtual called reactionCount
-thoughtSchema.virtual('reactionCount').get(function () {
-    return this.reactions.length;
-});
+// thoughtSchema.virtual('reactionCount').get(function () {
+//     return this.reactions.length;
+// });
 
 // Create the Thought model
 const Thought = mongoose.model('Thought', thoughtSchema);

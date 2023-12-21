@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+
 // Define the Reaction schema
 const reactionSchema = new Schema(
     {

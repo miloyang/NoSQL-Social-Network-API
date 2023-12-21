@@ -1,5 +1,5 @@
 const express = require('express');
-const reactionController = require('../controllers/reaction-controller');
+const reactionController = require('../../controllers/reaction-controller');
 const router = express.Router();
 
 // POST to create a reaction stored in a single thought's reactions array field

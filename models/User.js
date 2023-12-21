@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 const thoughtSchema = require('./Thought');
-
+// const mongoose = require('mongoose')
+// mongoose.model 
 const userSchema = new Schema(
     {
     username: {
@@ -16,7 +17,7 @@ const userSchema = new Schema(
           validate: {
             // Mongoose email validation
             validator: function(v) {
-                return /^([a-zA-Z0-9_\.-]+)@([\da-zA-Z\.-]+)\.([a-zA-Z\.]{2,})$/.test(v);
+                // return /^([a-zA-Z0-9_\.-]+)@([\da-zA-Z\.-]+)\.([a-zA-Z\.]{2,})$/.test(v);
             },
             message: props => `${props.value} is not a valid email address!`
         },
@@ -36,11 +37,11 @@ const userSchema = new Schema(
 });
 
 // Create a virtual called friendCount
-userSchema.virtual('friendCount').get(function () {
-    return this.friends.length;
-});
+// userSchema.virtual('friendCount').get(function () {
+//     return this.friends.length;
+// });
 
 // Create the User model
-const User = mongoose.model ('user', userSchema);
+const User = model ('user', userSchema);
 
 model.exports = User;
