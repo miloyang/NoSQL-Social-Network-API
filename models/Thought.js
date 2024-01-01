@@ -1,6 +1,39 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
-const reactionSchema = require('./Reaction');
+const { Schema, model, Types } = require('mongoose');
+// const Schema = mongoose.Schema;
+// const reactionSchema = require('../Unused/Reaction');
+
+// Create Reaction schema
+const reactionSchema = new Schema(
+    {
+      reactionId: {
+        type: Types.ObjectId, // tell Mongoose to expect an ObjectId
+        default: () => new Types.ObjectId(), // default value is a new ObjectId
+      },
+      reactionBody: {
+        type: String,
+        required: true,
+        maxLength: 280,
+        trim: true,
+      },
+      username: {
+        type: String,
+        required: true,
+        trim: true,
+      },
+      createdAt: {
+        type: Date,
+        default: Date.now,
+        // Use a getter method to format the timestamp on query
+        get: (createdAt) => new Date(createdAt).toLocaleString(),
+      },
+    },
+    {
+      toJSON: {
+        getters: true,
+      },
+      id: false,
+    }
+  );
 
 // Define the Thought schema
 const thoughtSchema = new Schema(
@@ -26,11 +59,11 @@ const thoughtSchema = new Schema(
 );
 
 // Create a virtual called reactionCount
-// thoughtSchema.virtual('reactionCount').get(function () {
-//     return this.reactions.length;
-// });
+thoughtSchema.virtual('reactionCount').get(function () {
+    return this.reactions.length;
+});
 
 // Create the Thought model
-const Thought = mongoose.model('Thought', thoughtSchema);
+const Thought = model('Thought', thoughtSchema);
 
 module.exports = Thought;
