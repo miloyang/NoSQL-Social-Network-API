@@ -85,56 +85,56 @@ Insomnia was used to seed and test the routes for this app. There is no command 
 - `/api/users`
 
   **GET (Find all users)**
-  ![Find All Users](public/assets/Images/Get-all-users.png)
+  ![Find All Users](Public/Assets/Images/Get-all-users.png)
   
   **POST (Create a user)**
-  ![Create A User](public/assets/Images/Create-user.png)
+  ![Create A User](Public/Assets/Images/Create-user.png)
 
 - `/api/users/:userid`
 
   **GET (Find one user)**
-  ![Find One Users](public/assets/Images/Get-user-by-ID.png)
+  ![Find One Users](Public/Assets/Images/Get-user-by-ID.png)
 
   **PUT (Update a user)**
-  ![Update A User](public/assets/Images/Update-user.png)
+  ![Update A User](Public/Assets/Images/Update-user.png)
 
   **DELETE (Delete a user)**
-  ![Delete A User](public/assets/Images/Delete-user.png)
+  ![Delete A User](Public/Assets/Images/Delete-user.png)
 
 - `/api/users/:userId/friends/:friendId`
 
   **POST (Add a friend)**
-  ![Add A Friend](public/assets/Images/Add-friend.png)
+  ![Add A Friend](Public/Assets/Images/Add-friend.png)
 
   **DELETE (Remove a friend)**
-  ![Remove A Friend](public/assets/Images/Remove-friend.png)
+  ![Remove A Friend](Public/Assets/Images/Remove-friend.png)
 
 - `/api/thoughts`
 
   **GET (Find all thoughts)**
-  ![Find All Thoughts](public/assets/Images/Get-all-thoughts.png)
+  ![Find All Thoughts](Public/Assets/Images/Get-all-thoughts.png)
   
   **POST (Create a thought)**
-  ![Create A Thought](public/assets/Images/Create-thought.png)
+  ![Create A Thought](Public/Assets/Images/Create-thought.png)
 
 - `/api/thoughts/:thoughtId`
 
   **GET (Find a thought)**
-  ![Find A Thought](public/assets/Images/Get-thought-by-ID.png)
+  ![Find A Thought](Public/Assets/Images/Get-thought-by-ID.png)
 
   **PUT (Update a thought)**
-  ![Update A Thought](public/assets/Images/Update-thought.png)
+  ![Update A Thought](Public/Assets/Images/Update-thought.png)
 
   **DELETE (Delete a thought)**
-  ![Delete A Thought](public/assets/Images/Delete-thought.png)
+  ![Delete A Thought](Public/Assets/Images/Delete-thought.png)
 
 - `/api/thoughts/:thoughtId/reactions`
 
   **POST (Create a reaction)**
-  ![Create A Reaction](public/assets/Images/Create-reaction.png)
+  ![Create A Reaction](Public/Assets/Images/Create-reaction.png)
 
   **DELETE (Delete a reaction)**
-  ![Remove A Reaction](public/assets/Images/Remove-reaction.png)
+  ![Remove A Reaction](Public/Assets/Images/Remove-reaction.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
