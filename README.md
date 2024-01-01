@@ -54,11 +54,11 @@ You must also install the Express.js npm package to run the server. Since Expres
 
 3. Navigate to Insomnia and refer to the instructions in the "Tests" section for testing the available routes. Additionally, you can explore the screenshots within the images folder under the public directory to view visuals of all the routes, or refer to the provided screencastify video below.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Screencastify
 
 Screencastify Link: 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
@@ -79,8 +79,6 @@ Insomnia was used to seed and test the routes for this app. There is no command 
 3. Navigate to Insomnia and initiate testing for the desired route. Ensure to modify the route method from GET to either POST, PUT, or DELETE based on the specific test requirements.
 
 4. The routes are outlined as follows (adjust "users" to "thoughts", "reactions" or "friends" if you intend to test those routes, and replace ":id" with the actual identifier of the route you are testing).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### Example Insomnia Test Routes
 
@@ -124,8 +122,12 @@ Insomnia was used to seed and test the routes for this app. There is no command 
 
   **DELETE (Delete a reaction)**
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Contact Me
 
-GitHub Link: (https://github.com/miloyang)
+GitHub Link: https://github.com/miloyang<br>
 Email Address: <miloyang9@gmail.com><br>
-LinkedIn: (https://www.linkedin.com/in/miloyang)
+LinkedIn: https://www.linkedin.com/in/miloyang
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
