@@ -74,7 +74,7 @@ Click on the link for more information: [MIT License Information](https://openso
 Insomnia was used to seed and test the routes for this app. There is no command for running these tests. 
 1. To test the application, download insomnia. For more information on Insomnia, follow this link: https://docs.insomnia.rest/.
 
-2. Run `npm run start` to start the server
+2. Run `npm start` to start the server
 
 3. Navigate to Insomnia and initiate testing for the desired route. Ensure to modify the route method from GET to either POST, PUT, or DELETE based on the specific test requirements.
 
@@ -85,42 +85,56 @@ Insomnia was used to seed and test the routes for this app. There is no command 
 - `/api/users`
 
   **GET (Find all users)**
+  ![Find All Users](public/assets/Images/Get-all-users.png)
   
   **POST (Create a user)**
+  ![Create A User](public/assets/Images/Create-user.png)
 
 - `/api/users/:userid`
 
   **GET (Find one user)**
+  ![Find One Users](public/assets/Images/Get-user-by-ID.png)
 
   **PUT (Update a user)**
+  ![Update A User](public/assets/Images/Update-user.png)
 
   **DELETE (Delete a user)**
+  ![Delete A User](public/assets/Images/Delete-user.png)
 
 - `/api/users/:userId/friends/:friendId`
 
   **POST (Add a friend)**
+  ![Add A Friend](public/assets/Images/Add-friend.png)
 
   **DELETE (Remove a friend)**
+  ![Remove A Friend](public/assets/Images/Remove-friend.png)
 
 - `/api/thoughts`
 
   **GET (Find all thoughts)**
+  ![Find All Thoughts](public/assets/Images/Get-all-thoughts.png)
   
   **POST (Create a thought)**
+  ![Create A Thought](public/assets/Images/Create-thought.png)
 
 - `/api/thoughts/:thoughtId`
 
   **GET (Find a thought)**
+  ![Find A Thought](public/assets/Images/Get-thought-by-ID.png)
 
   **PUT (Update a thought)**
+  ![Update A Thought](public/assets/Images/Update-thought.png)
 
   **DELETE (Delete a thought)**
+  ![Delete A Thought](public/assets/Images/Delete-thought.png)
 
 - `/api/thoughts/:thoughtId/reactions`
 
   **POST (Create a reaction)**
+  ![Create A Reaction](public/assets/Images/Create-reaction.png)
 
   **DELETE (Delete a reaction)**
+  ![Remove A Reaction](public/assets/Images/Remove-reaction.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
